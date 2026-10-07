@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube - Rubik's Cube</title>
+    <style>
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .content-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        form {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: right;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
 
+    <div class="content-box">
+        <h1>Cube (مکعب روبیک)</h1>
+        <p>
+            The Rubik's Cube is a 3D combination puzzle invented in 1974 by Hungarian sculptor and professor Ernő Rubik. Originally called the Magic Cube, the puzzle was licensed by Rubik to be sold by Pentangle Puzzles in the UK in 1978, and then by Ideal Toy Corp in 1980. The cube was released internationally in 1980 and became one of the most recognised icons in popular culture. It won the 1980 German Game of the Year special award for Best Puzzle. As of January 2024, around 500 million cubes had been sold worldwide, making it the world's best-selling puzzle game and bestselling toy.
+        </p>
+        <p style="text-align: center;">
+            <a href="https://chekaad.co/" target="_blank">Cube Address (آدرس سایت)</a>
+        </p>
+        <img height="300px" src="images (2).jpg" style="display: block; margin: 20px auto;" alt="Rubik's Cube">
+    </div>
+
+    <div class="content-box">
+        <h2>لیست کیوب بازان</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>نام</th>
+                    <th>سن</th>
+                    <th>شهر</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>محمد مهدی خردی</td>
+                    <td>13</td>
+                    <td>تهران</td>
+                </tr>
+                <tr>
+                    <td>علیرضا</td>
+                    <td>14</td>
+                    <td>عراق</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="content-box">
+        <h2>Contact Form (فرم تماس)</h2>
+        <form action="https://formspree.io/f/xeaeakq" method="POST">
+            <input type="hidden" name="_subject" value="پاسخ جدید از سایت Cube">
+            <input type="hidden" name="_template" value="table">
+
+            <label for="name">Name (نام):</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email (ایمیل):</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Go (ارسال)</button>
+        </form>
+    </div>
+
+</body>
+</html>
