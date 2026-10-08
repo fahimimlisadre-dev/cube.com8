@@ -4,37 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cube - Rubik's Cube</title>
+    <style>
+        /* استایل‌های بسیار ساده برای راست‌چین شدن و زیبایی */
+        body { font-family: Tahoma, Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 20px; line-height: 1.8; text-align: right; }
+        h1, h2 { text-align: right; color: #333; }
+        a { color: #e74c3c; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        form { background: #f9f9f9; padding: 15px; border-radius: 5px; border: 1px solid #ddd; margin-top: 20px; }
+        input[type="text"], input[type="email"] { width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background-color: #333; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%; }
+        button:hover { background-color: #555; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 10px; text-align: right; border-bottom: 1px solid #ddd; }
+        th { background-color: #f2f2f2; }
+    </style>
 </head>
 <body>
 
-    <h1>Cube</h1>
+    <h1>Cube (مکعب روبیک)</h1>
 
     <p>
         The Rubik's Cube is a 3D combination puzzle invented in 1974 by Hungarian sculptor and professor Ernő Rubik. Originally called the Magic Cube, the puzzle was licensed by Rubik to be sold by Pentangle Puzzles in the UK in 1978, and then by Ideal Toy Corp in 1980. The cube was released internationally in 1980 and became one of the most recognised icons in popular culture. It won the 1980 German Game of the Year special award for Best Puzzle. As of January 2024, around 500 million cubes had been sold worldwide, making it the world's best-selling puzzle game and bestselling toy.
         <br><br>
-        <a href="https://chekaad.co/" target="_blank">Cube Address</a>
+        <a href="https://chekaad.co/" target="_blank">Cube Address (آدرس سایت)</a>
     </p>
 
-    <img height="300px" src="images (2).jpg" style="display: block; margin: 20px auto;" alt="Rubik's Cube">
+    <!-- نام عکس را به rubik.jpg تغییر دهید -->
+    <img height="300px" src="rubik.jpg" style="display: block; margin: 20px auto; border-radius: 8px;" alt="Rubik's Cube">
 
-    <h2>Contact Form</h2>
+    <h2>Contact Form (فرم تماس)</h2>
     
-    <!-- لینک جدید و صحیح شما: pppqrow -->
     <form action="https://formspree.io/f/pppqrow" method="POST">
         <input type="hidden" name="_subject" value="پاسخ جدید از سایت Cube">
         <input type="hidden" name="_template" value="table">
         
-        <label for="name">Name</label> <br>
-        <input type="text" id="name" name="name" required> <br><br>
+        <label for="name">Name (نام):</label> <br>
+        <input type="text" id="name" name="name" required> <br>
         
-        <label for="email">Email</label> <br>
-        <input type="email" id="email" name="email" required> <br><br>
+        <label for="email">Email (ایمیل):</label> <br>
+        <input type="email" id="email" name="email" required> <br>
         
-        <button type="submit">Go</button>
+        <button type="submit">Go (ارسال)</button>
     </form>
 
-    <h2>اسم کیوب بازسنشهر</h2>
-    <table border="1">
+    <h2>لیست کیوب بازان</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>نام</th>
+                <th>سن</th>
+                <th>شهر</th>
+            </tr>
+        </thead>
         <tbody>
             <tr>
                 <td>محمد مهدی خردی</td>
