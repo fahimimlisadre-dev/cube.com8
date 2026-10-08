@@ -5,18 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cube - Rubik's Cube</title>
     <style>
-        /* استایل‌های بسیار ساده برای راست‌چین شدن و زیبایی */
-        body { font-family: Tahoma, Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 20px; line-height: 1.8; text-align: right; }
-        h1, h2 { text-align: right; color: #333; }
-        a { color: #e74c3c; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        form { background: #f9f9f9; padding: 15px; border-radius: 5px; border: 1px solid #ddd; margin-top: 20px; }
-        input[type="text"], input[type="email"] { width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
-        button { background-color: #333; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%; }
-        button:hover { background-color: #555; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { padding: 10px; text-align: right; border-bottom: 1px solid #ddd; }
-        th { background-color: #f2f2f2; }
+        /* تنظیمات کلی صفحه و پس‌زمینه آبی */
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background-color: #0078d4; /* رنگ آبی مشابه عکس شما */
+            color: white;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        /* عنوان اصلی */
+        h1 {
+            font-size: 28px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* متن‌ها */
+        p {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        /* لینک آدرس سایت */
+        a {
+            color: #ffeb3b; /* رنگ زرد برای خوانایی روی پس‌زمینه آبی */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* عکس */
+        img {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* فرم تماس */
+        form {
+            background: rgba(255, 255, 255, 0.1); /* پس‌زمینه شفاف برای فرم */
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 30px;
+        }
+
+        label {
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: white;
+            color: #0078d4;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* جدول */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: right;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.2);
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
     </style>
 </head>
 <body>
@@ -29,46 +129,11 @@
         <a href="https://chekaad.co/" target="_blank">Cube Address (آدرس سایت)</a>
     </p>
 
-    <!-- نام عکس را به rubik.jpg تغییر دهید -->
-    <img height="300px" src="rubik.jpg" style="display: block; margin: 20px auto; border-radius: 8px;" alt="Rubik's Cube">
+    <!-- نام عکس شما باید rubik.jpg باشد -->
+    <img height="300px" src="rubik.jpg" alt="Rubik's Cube">
 
     <h2>Contact Form (فرم تماس)</h2>
     
+    <!-- این فرم به Formspree شما وصل است -->
     <form action="https://formspree.io/f/pppqrow" method="POST">
-        <input type="hidden" name="_subject" value="پاسخ جدید از سایت Cube">
-        <input type="hidden" name="_template" value="table">
-        
-        <label for="name">Name (نام):</label> <br>
-        <input type="text" id="name" name="name" required> <br>
-        
-        <label for="email">Email (ایمیل):</label> <br>
-        <input type="email" id="email" name="email" required> <br>
-        
-        <button type="submit">Go (ارسال)</button>
-    </form>
-
-    <h2>لیست کیوب بازان</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>نام</th>
-                <th>سن</th>
-                <th>شهر</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>محمد مهدی خردی</td>
-                <td>13</td>
-                <td>تهران</td>
-            </tr>
-            <tr>
-                <td>علیرضا</td>
-                <td>14</td>
-                <td>عراق</td>
-            </tr>
-        </tbody>
-    </table>
-
-</body>
-</html>
+        <input type="hidden" name=
